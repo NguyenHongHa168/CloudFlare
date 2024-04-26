@@ -1,0 +1,13 @@
+<div class="browse-page flex p-4">
+    <div class="banner">
+    <img class="banner-img" [src]="tmcbConfig.imagePath + bannerMovie.poster_path" alt="movie" />
+  </div>
+  <div class="movie-categories px-4">
+    <p class="font-bold text-green-600 text-3xl"> {{bannerMovie.title}}</p>
+    <span class="font-bold"> {{bannerMovie.release_date | date:'mediumDate'}} - </span>
+    <span class="font-bold uppercase"> {{ bannerMovie.original_language}} - </span>
+    <span class="font-bold">Vote: {{bannerMovie.vote_count}} - </span>
+    <span class="font-bold">popularity: {{bannerMovie.popularity}}</span>
+    <p class="py-4"> {{bannerMovie.overview}}</p>
+  </div>
+</div>

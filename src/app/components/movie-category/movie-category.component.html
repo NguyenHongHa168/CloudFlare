@@ -1,0 +1,21 @@
+<div class="card mt-2">
+    <h4 class="text-white font-bold mb-4 text-xl uppercase">{{title}}</h4>
+    <p-carousel [value]="movieList" [numVisible]="3" [numScroll]="1" [responsiveOptions]="responsiveOptions">
+        <ng-template let-product pTemplate="item">
+            <div class="product-item">
+                <div class="product-item-content">
+                    <div claas="mb-12" style="margin-bottom:40px !important">
+                        <div class="flex gap-4">
+                            @for(movie of movieList; track movie){
+                            <app-movie-card [movie]="movie"></app-movie-card>
+                            }
+                            @empty {
+                            <p>Loading....</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

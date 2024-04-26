@@ -1,0 +1,22 @@
+@import 'ngx-toastr/toastr';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// @import "~ng-zorro-antd/ng-zorro-antd.min.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
+*{
+    // font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+html, body { height: 100%; }
+body { margin: 0; }
+
+:root{
+    --text:rgb(153, 153, 153);
+    --bg-header:rgb(0, 0, 0);
+}

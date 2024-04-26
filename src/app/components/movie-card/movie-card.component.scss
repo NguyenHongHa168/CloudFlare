@@ -1,0 +1,59 @@
+.movie-card{
+    width:200px;
+    height:300px;
+    border-radius: 10px;
+    img{
+        border-radius: 10px;
+    }
+    .title{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size:12px;
+        background-color:rgb(34, 33, 33);
+        display: none;
+        width: 200px;
+    }
+    &:hover{
+        transform: scale(1.2);
+        transition: all .3s ease-in-out;
+        .title{
+            padding:5px;
+            color: white;
+            font-size:12px;
+            background-color:rgb(34, 33, 33);
+            display: block;
+            word-wrap: break-word;
+        }
+    }
+
+}
+
+
+// reponsive tablet, mobile
+@media (max-width: 1400px) {
+    
+  }
+  
+  @media (max-width: 975px) {
+   
+  }
+  
+  @media (max-width: 750px) {
+    .movie-card{
+        width: 100px;
+        height: 100px;
+    }
+  }
+  
+  @media (max-width: 670px) {
+   
+  }
+  
+  @media (max-width: 530px) {
+   
+  }
+  
+  @media (max-width: 460px) {
+ 
+  }

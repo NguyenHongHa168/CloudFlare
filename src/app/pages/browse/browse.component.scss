@@ -1,0 +1,143 @@
+.browse-page {
+  background-color: rgb(28, 28, 28);
+  .banner {
+    height: 100vh;
+    width: 100vw;
+    .banner-img {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .banner-video{
+      position: absolute;
+      top:0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .banner-movie-info {
+    width: 40%;
+    color: rgb(192, 192, 192);
+    position: relative;
+    display: flex;
+    z-index: 999;
+    flex-direction: column;
+    top: 30%;
+    padding-left: 2rem;
+    padding-left: 60px;
+    .banner-heading {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: fantasy;
+      line-height:1.2;
+      
+    }
+    .banner-description {
+      font-size: 16px;
+      margin-top:20px;
+      // font-weight: 400;
+      font-family:'Times New Roman', Times, serif ;
+      text-align: justify;
+
+    }
+    .banner-action {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      justify-content: start;
+      margin-top:32px;
+      outline: none;
+      font-size: 13px;
+      .play-btn {
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        padding: 10px 35px;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+      .info-btn {
+        padding: 10px 40px;
+        background-color: rgba($color: #515151, $alpha: 0.8);
+         border-radius: 4px;
+        color:white;
+        margin: 10px;
+        &:hover{
+          opacity: 0.8;
+        }
+      }
+      
+    }
+  }
+}
+
+
+
+
+// reponsive tablet, mobile
+@media (max-width: 460px) {
+  .movie-categories{
+    padding:0 !important;
+  }
+}
+@media (max-width: 530px) {
+  .movie-categories{
+    padding:0 !important;
+  }
+}
+@media (max-width: 670px) {
+  .movie-categories{
+    padding:0 !important;
+  }
+}
+@media (max-width: 750px) {
+  .movie-categories{
+    padding:0 !important;
+  }
+  .banner-img{
+    height: 80% !important;
+    object-fit: cover !important;
+  }
+  
+  .info-btn{
+    display: none !important;
+  }
+}
+@media (max-width: 975px) {
+  .banner-movie-info{
+    width: 100% !important;
+    padding:20px !important;
+    .banner-heading{
+      font-size: 28px !important;
+    }
+  }
+  .movie-categories{
+    padding:0 !important;
+  }
+}
+@media (max-width: 1400px) {
+  .browse-page{
+    .banner-movie-info{
+      width: 60%;
+    }
+    .banner-img{
+      max-height: 800px;
+    }
+  }
+  
+  .movie-categories{
+    padding:0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+

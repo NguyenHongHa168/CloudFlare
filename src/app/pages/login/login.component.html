@@ -1,0 +1,28 @@
+<div class="h-screen" [ngStyle]="{'background-image': 'url('+bgURL+')'}">
+    <app-header></app-header>
+    <div class="login-container">
+        <div class="login-card">
+            <h2 class="heading">Sign in</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="form-field ">
+                    <input type="text" class="input" name="email" [(ngModel)]="email"
+                        placeholder="Email or phone number">
+                </div>
+                <div class="form-field my-2">
+                    <input type="password" class="input" name="Password" [(ngModel)]="password" placeholder="Password">
+                </div>
+                <div class="action-field">
+                    <button class="btn login-button"> Sign In</button>
+                </div>
+            </form>
+            <div class="text-gray-50 my-3" style="text-align: center;"> OR </div>
+            <div class="action-field">
+                <button class="btn sign-in__code"> Use a Sign-In Code </button>
+            </div>
+            <div class="forgot-btn my-3" style="text-align: center;"> 
+                <a class="text-gray-50" href="">Forgot password?</a> 
+            </div>
+            <div class="text-gray-50 my-2">New to Netflix? <span><a href="">Sign up now.</a> </span></div>
+        </div>
+    </div>
+</div>

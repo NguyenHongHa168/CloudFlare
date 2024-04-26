@@ -1,0 +1,47 @@
+.card{
+    color: whitesmoke;
+}
+:host ::ng-deep {
+    .product-item {
+        .product-item-content {
+            border-radius: 3px;
+            margin: .3rem;
+            text-align: center;
+        }
+    
+        .product-image {
+            width: 50%;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+        }
+    }
+}
+
+
+// reponsive tablet, mobile
+@media (max-width: 1400px) {
+    
+}
+
+@media (max-width: 975px) {
+ 
+}
+
+@media (max-width: 750px) {
+ .card{
+    h4{
+        padding: 10px 20px;
+    }
+ }
+}
+
+@media (max-width: 670px) {
+ 
+}
+
+@media (max-width: 530px) {
+ 
+}
+
+@media (max-width: 460px) {
+
+}

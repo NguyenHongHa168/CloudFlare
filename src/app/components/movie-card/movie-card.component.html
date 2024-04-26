@@ -1,0 +1,10 @@
+@if(movie){
+    <div class="movie-card">
+    <img [src]="tmcbConfig.imagePath + movie.poster_path" alt="movie">
+    <div class="title">
+        <div class="text-green-600">{{movie.original_title}}</div>
+        <span class="uppercase text-xs"> {{movie.original_language}} - </span>
+        <span class="text-xs">{{movie.release_date | date:'mediumDate'}}</span>
+    </div>
+</div>
+}
