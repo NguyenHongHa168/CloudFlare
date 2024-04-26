@@ -3,8 +3,8 @@
     <app-header></app-header>
     <!-- banner -->
     <div class="banner">
-        <img class="banner-img" [src]="tmcbConfig.imagePath + bannerMovie?.poster_path" alt="movie">
-<!-- 
+        <!-- <img class="banner-img" [src]="tmcbConfig.imagePath + bannerMovie?.poster_path" alt="movie"> -->
+
         @if(bannerMovie && bannerMovie.videoKey){
         <iframe
       class="banner-video"
@@ -13,7 +13,7 @@
         }
         @else{
         <img class="banner-img" [src]="tmcbConfig.imagePath + bannerMovie.poster_path" alt="movie">
-        } -->
+        }
         <div class="banner-movie-info">
             <h4 class="banner-heading text-gray-50">{{bannerMovie.title}}</h4>
             <p class="banner-description">{{bannerMovie.overview}}</p>
@@ -32,9 +32,9 @@
     <!-- categories movie -->
     <div class="movie-categories px-16 relative z-50 -mt-40">
         <app-movie-category [title]="'Trending'" [movieList]="popularMovies"></app-movie-category>
-        <!-- <app-movie-category [title]="'Playlist'" [movieList]="nowPlayMovies"></app-movie-category>
+        <app-movie-category [title]="'Playlist'" [movieList]="nowPlayMovies"></app-movie-category>
         <app-movie-category [title]="'Top Rated'" [movieList]="topRateMovies"></app-movie-category>
-        <app-movie-category [title]="'Upcoming'" [movieList]="upComingMovies"></app-movie-category> -->
+        <app-movie-category [title]="'Upcoming'" [movieList]="upComingMovies"></app-movie-category>
         <!-- <app-movie-category [title]="'Now playing'" [movieList]="nowPlayMovies"></app-movie-category> -->
         <!-- <app-movie-category [title]="'Coming'" [movieList]="upComingMovies"></app-movie-category> -->
     </div>
